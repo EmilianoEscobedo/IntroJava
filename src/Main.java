@@ -1,3 +1,6 @@
+////////////////////////////////////////////
+// Exercise one - Functions
+
 /* public class Main {
     public static void main(String[] args){
         System.out.println(suma(10,20,30));
@@ -19,8 +22,9 @@ class Car{
 } */
 
 ////////////////////////////////////////////////////
+// Ezercise two - Conditionals
 
-public class Main {
+/* public class Main {
     public static void main(String[] args){
        
         int numberIf = 10;
@@ -69,6 +73,51 @@ public class Main {
            }
     }
 
+} */
+
+//////////////////////////////////////////////////////////////
+//Excercise three - Classes
+
+public class Main {
+    public static void main(String[] args){
+        Person person1 = new Person();
+        person1.setAge() = 26;
+        person1.setName() = "Emiliano";
+        person1.setPhone() = 22341222314;
+        
+        System.out.println(person1.getAge());
+        System.out.println(person1.getName());
+        System.out.println(person1.getPhone());
+    }
 }
 
-
+class Person {
+    private int age;
+    private String name;
+    private int phone;
+    
+    public void setAge(int val){
+        this.age = val;    
+    }
+    
+    public void setName(String val){
+        this.name = val;    
+    }
+    
+    public void setPhone(int val){
+        this.phone = val;    
+    }
+    
+    public int getAge(){
+        return this.age;
+    }
+    
+    public String getName(){
+        return this.name;
+    }
+    
+    public int getPhone(){
+        return this.phone;
+    }
+    
+}
