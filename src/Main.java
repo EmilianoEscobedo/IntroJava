@@ -78,6 +78,7 @@ class Car{
 //////////////////////////////////////////////////////////////
 //Excercise three - Classes
 
+/*
 public class Main {
     public static void main(String[] args){
         Person person1 = new Person();
@@ -120,4 +121,44 @@ class Person {
         return this.phone;
     }
     
+}*/
+/////////////////////////////////////
+// Excercise four - Classes - inheritance, interfaces and polymorphism
+
+public class Main {
+    public static void main(String[] args){
+        Client client1 = new Client();
+        client1.name = "Emilio";
+        System.out.println("Hello! my name is " + client1.name);
+        client1.age = 26;
+        System.out.println("I have " + client1.age + "years old");
+        client1.phone = 3332422235;
+        System.out.println("my phone is " + client1.phone);
+        client1.credit = 2000;
+        System.out.println("I have " + client1.credit + "USD in credit");
+        
+        Worker worker1 = new Worker();
+        worker1.name = "Pepe";
+        System.out.println("Hello! iam a worker, and my name is " + worker1.name);
+        worker1.age = 26;
+        System.out.println("I have " + worker1.age + "years old");
+        worker1.phone = 3332422235;
+        System.out.println("my phone is " + worker1.phone);
+        worker1.salary = 2000;
+        System.out.println("My monthly salary is " + worker1.salary);
+    }
+}
+
+class Person {
+    public int age;
+    public String name;
+    public int phone;
+}
+
+class Client extends Person {
+    public int credit;
+}
+
+class Worker extends Person {
+    public int salary;
 }
